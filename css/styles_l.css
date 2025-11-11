@@ -1,0 +1,145 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+html, body {
+    font-family: 'Roboto Mono', monospace;
+    background: #212121;
+    color: #FAFAFA;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #333;
+    padding: 14px 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 25px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-left span {
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+/* Navbar links */
+.navbar-right a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+.navbar-right a:hover, .navbar-right a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* Increased space below navbar */
+    text-align: center;
+    padding: 40px; /* Increase padding for bigger frame */
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 100px; /* Increased space below navbar */
+    text-align: center;
+}
+
+.introduction-frame {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Adjusted to clearer blue tones */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin: 20px 0 40px; /* Added space above and below introduction */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    max-width: 60%; /* Center and narrow the frame */
+    color: #fff; /* White text color */
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+}
+
+.intro-content p {
+    font-size: 18px; /* Increase font size for the introduction text */
+    font-weight: 400; /* Ensure the text is not bold */
+}
+
+.avatar {
+    width: auto;
+    height: 150px; /* Reduced size of the avatar while keeping edges visible */
+    margin-right: 20px;
+    border-radius: 15px; /* Optional: make avatar circular */
+}
+
+
+.education-section {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 30px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.graduation-project {
+    max-width: 1100px; /* Increase max-width for bigger frame */
+    width: 100%;
+    padding: 30px; /* Increase padding for bigger frame */
+    margin: 30px 0; /* Increase margin for better spacing */
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Flex container styling */
+.flex-container {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.video-container { display: flex; justify-content: center; /* Center the videos horizontally */ gap: 20px; /* Add space between the videos */ flex-wrap: wrap; /* Ensure videos stack on smaller screens */ } 
+.video-container iframe { flex: 1; max-width: 450px; /* Keep the original width */ height: 250px; /* Maintain aspect ratio */ }
